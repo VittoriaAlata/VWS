@@ -1,45 +1,67 @@
-# URL del file SYSCOM.PS1 online
-$remoteFileUrl = "https://vittoriaalata.github.io/VWS/SYSCOM/SYSCOM.PS1"
-# Percorso del file SYSCOM.PS1 locale
-$localFilePath = ".\SYSCOM.PS1"
-# Percorso della cartella di installazione del programma
-$installFolder = ".\"
+# Funzione per controllare la versione di PowerShell
+function Check-PowerShellVersion {
+    $psVersion = $PSVersionTable.PSVersion
+    $requiredVersion = [Version]"7.4.2"
+    if ($psVersion -lt $requiredVersion) {
+        Write-Output "Questo setup richiede PowerShell 7.4.2 o superiore. La tua versione attuale è $psVersion."
+        Write-Output "Aggiorna PowerShell e riprova."
+        Pause
+        exit
+    }
+}
 
-try {
-    # Ottieni l'header del file remoto
-    $versionResponse = Invoke-WebRequest -Uri $remoteFileUrl -Method Head -ErrorAction Stop
+# Verifica la versione di PowerShell
+Check-PowerShellVersion
 
-    # Ottieni la data di ultima modifica del file remoto
-    if ($versionResponse.StatusCode -eq 200 -and $versionResponse.Headers["Last-Modified"]) {
-        $onlineLastModified = [DateTime]::Parse($versionResponse.Headers["Last-Modified"])
+Add-Type -AssemblyName PresentationFramework
 
-        # Controlla se il file locale esiste
-        if (Test-Path $localFilePath) {
-            # Ottieni la data di ultima modifica del file locale
-            $localLastModified = (Get-Item $localFilePath).LastWriteTime
+# XAML per la GUI
+[xml]$xaml = @"
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        Title="Installazione del Programma" Height="300" Width="400">
+    <Grid>
+        <TextBlock Text="Seleziona la cartella di installazione:" VerticalAlignment="Top" Margin="10,10,10,0"/>
+        <TextBox Name="InstallPathTextBox" Text="C:\SYSCOM" VerticalAlignment="Top" Margin="10,30,10,0" Height="25"/>
+        <Button Name="BrowseButton" Content="Sfoglia" Width="75" Height="25" VerticalAlignment="Top" Margin="10,60,10,0" HorizontalAlignment="Left"/>
+        <TextBlock Name="StatusText" Text="Pronto per l'installazione." VerticalAlignment="Top" Margin="10,100,10,0" TextWrapping="Wrap"/>
+        <Button Name="InstallButton" Content="Installa" Width="100" Height="30" VerticalAlignment="Bottom" Margin="10" HorizontalAlignment="Left"/>
+        <Button Name="CancelButton" Content="Annulla" Width="100" Height="30" VerticalAlignment="Bottom" Margin="10" HorizontalAlignment="Right"/>
+    </Grid>
+</Window>
+"@
 
-            # Mostra a video le date di comparazione
-            Write-Output "Data di ultima modifica del file locale: $localLastModified"
-            Write-Output "Data di ultima modifica del file remoto: $onlineLastModified"
+# Leggi e carica il XAML
+$reader = (New-Object System.Xml.XmlNodeReader $xaml)
+$window = [Windows.Markup.XamlReader]::Load($reader)
 
-            # Confronta le date
-            if ($localLastModified -ge $onlineLastModified) {
-                Write-Output "Il file locale è aggiornato."
-                Pause
-                exit
-            } else {
-                Write-Output "Una nuova versione del programma è disponibile. Aggiornamento in corso..."
-                Pause
-                # Rimuovi la vecchia installazione
-                Remove-Item -Path $installFolder -Recurse -Force
-            }
-        } else {
-            Write-Output "Il file locale non esiste. Procedendo con l'installazione..."
+# Funzione per gestire il clic sul pulsante Sfoglia
+$BrowseButton_Click = {
+    [System.Reflection.Assembly]::LoadWithPartialName("System.windows.forms") | Out-Null
+    $folderBrowser = New-Object System.Windows.Forms.FolderBrowserDialog
+    $folderBrowser.ShowDialog() | Out-Null
+    if ($folderBrowser.SelectedPath -ne "") {
+        $window.InstallPathTextBox.Text = $folderBrowser.SelectedPath
+    }
+}
+
+# Funzione per gestire il clic sul pulsante Installa
+$InstallButton_Click = {
+    $installFolder = $window.FindName("InstallPathTextBox").Text
+    $statusText = $window.FindName("StatusText")
+    $statusText.Text = "Scaricamento e installazione in corso..."
+
+    # URL del file zip del programma
+    $url = "https://vittoriaalata.github.io/VWS/SYSCOM/SYSCOM.zip"
+    # Percorso del file zip scaricato
+    $outputFile = "$installFolder\SYSCOM.zip"
+    # Directory del desktop dell'utente
+    $desktopPath = [System.Environment]::GetFolderPath("Desktop")
+
+    try {
+        # Crea la directory di installazione se non esiste
+        if (-not (Test-Path $installFolder)) {
+            New-Item -Path $installFolder -ItemType Directory | Out-Null
         }
-
-        # URL per scaricare il file zip del programma
-        $url = "https://vittoriaalata.github.io/VWS/SYSCOM/SYSCOM.zip"
-        $outputFile = ".\SYSCOM.zip"
 
         # Scarica il file zip
         Invoke-WebRequest -Uri $url -OutFile $outputFile -ErrorAction Stop
@@ -50,11 +72,32 @@ try {
         # Rimuovi il file zip dopo l'estrazione
         Remove-Item $outputFile
 
-        Write-Output "Installazione completata."
-    } else {
-        Write-Output "Non è stato possibile ottenere la data di ultima modifica del file online."
+        $statusText.Text += "`nInstallazione completata."
+
+        # Crea un collegamento sul desktop
+        $shortcutPath = Join-Path $desktopPath "SYSCOM.lnk"
+        $shell = New-Object -ComObject WScript.Shell
+        $shortcut = $shell.CreateShortcut($shortcutPath)
+        $shortcut.TargetPath = "$installFolder\SYSCOM.PS1"
+        $shortcut.WorkingDirectory = $installFolder
+        $shortcut.Save()
+
+        $statusText.Text += "`nCollegamento sul desktop creato."
+    }
+    catch {
+        $statusText.Text += "`nSi è verificato un errore durante l'installazione: $_"
     }
 }
-catch {
-    Write-Output "Si è verificato un errore durante l'installazione: $_"
+
+# Funzione per gestire il clic sul pulsante Annulla
+$CancelButton_Click = {
+    $window.Close()
 }
+
+# Associa le funzioni agli eventi dei pulsanti
+$window.FindName("BrowseButton").Add_Click($BrowseButton_Click)
+$window.FindName("InstallButton").Add_Click($InstallButton_Click)
+$window.FindName("CancelButton").Add_Click($CancelButton_Click)
+
+# Mostra la finestra
+$window.ShowDialog() | Out-Null

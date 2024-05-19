@@ -490,7 +490,7 @@ function INFO {
     Write-Host "`n`n"
     Write-Host "`nNome programma: SYSCOM"
     Write-Host "`nNome funzione: INFO"
-    Write-Host "`nOra ultima scrittura: 19/05/2024 - 17:09"
+    Write-Host "`nOra ultima scrittura: 19/05/2024 - 21:31"
     Write-Host "`n! Se si vuole installare l'ultima versione avviare il file INSTALL.PS1" -ForegroundColor Red
 }
 
