@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Global */
+html {
+  min-height: 100%;
+  overflow-y: scroll; /* Permette lo scorrimento verticale */
+}
+body {
+  padding: 4em;
+  color: rgba(255,255,255,.75);
+  font-family: 'Anonymous Pro', monospace;  
+  background-color: rgb(25,25,25);  
+}
+.line-1 {
+    position: relative;
+    top: 1%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 1s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 5em; }
+}
+@keyframes blinkTextCursor {
+  from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: transparent; }
+}
+        </style>
+    </head>
+    <body>
+        <p class="line-1 anim-typewriter">Crediti</p>
+        <h1>Ringraziamenti</h1>
+        <p>Ringrazio <a href="https://css-tricks.com/snippets/css/typewriter-effect/" style="color: rgba(255,255,255,.75);">Geoff Graham</a> per l'animazione testuale della macchina da scrivere.</p>
+        <p>Ringrazio <a href="https://www.youtube.com/watch?v=UpZM1kIO33w" style="color: rgba(255,255,255,.75);">Tony’s pipe</a> per il video da cui è tratto l'articolo.</p>
+    </body>
+</html>

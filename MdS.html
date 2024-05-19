@@ -1,5 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
-<h1>Guida all'acquisto di una Macchina da Scrivere</h1>
+/* Global */
+html {
+  min-height: 100%;
+  overflow-y: scroll; /* Permette lo scorrimento verticale */
+}
+body {
+  padding: 4em;
+  color: rgba(255,255,255,.75);
+  font-family: 'Anonymous Pro', monospace;  
+  background-color: rgb(25,25,25);  
+}
+.line-1 {
+    position: relative;
+    top: 1%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
 
-
-Corso per l'aquisto di una macchina da scrivere
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 26em; }
+}
+@keyframes blinkTextCursor {
+  from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: transparent; }
+}
+        </style>
+    </head>
+    <body>
+        <p class="line-1 anim-typewriter">Guida all'acquisto di una Macchina da scrivere</p>
+        <h1>Controlli da effettuare prima di acquistare una macchina da scrivere</h1>
+        <p>In questo articolo tratteremo le cinque cose fondamentali da valutare prima di acquistare una macchina da scrivere. Questi controlli ti aiuteranno ad evitare spiacevoli sorprese.</p>
+        <h2>1. Il corretto funzionamento del carrello</h2>
+        <p>Verifica che il carrello scorra senza impuntamenti per tutta la sua escursione. Assicurati che il carrello non presenti giochi e che si muova in modo fluido.</p>
+        <h2>2. Il corretto funzionamento dei martelletti</h2>
+        <p>Testa tasto per tasto per assicurarti che ogni martelletto si muova correttamente. Assicurati che i martelletti non si incastrino e che ritornino alla loro posizione originale senza problemi.</p>
+        <h2>3. Il corretto funzionamento del rullo</h2>
+        <p>Inserisci un foglio di carta per verificare che il caricamento risulti regolare e che la carta scorra senza intoppi. Controlla anche che il rullo faccia avanzare la carta in modo uniforme.</p>
+        <h2>4. Il sistema di trazione delle bobine di inchiostro</h2>
+        <p>Assicurati che le bobine di inchiostro girino correttamente. Un problema nel sistema di trazione delle bobine può causare una stampa irregolare.</p>
+        <h2>5. Il corretto funzionamento delle altre funzionalità</h2>
+        <ul>
+            <li>Controlla il funzionamento del selettore del colore del nastro.</li>
+            <li>Verifica che il meccanismo di interlinea funzioni correttamente.</li>
+            <li>Assicurati che il tasto di sblocco del carrello e del rullo funzionino.</li>
+            <li>Controlla il blocca maiuscole e il sistema di tabulazione, se presenti.</li>
+            <li>Verifica il funzionamento del tasto "backspace".</li>
+        </ul>
+        <h2>6. Controllare la carrozzeria</h2>
+        <p>Ispeziona la carrozzeria per eventuali danni o segni di ruggine, soprattutto nelle macchine prodotte durante la seconda guerra mondiale. Se la ruggine è marginale e il prezzo è buono, potrebbe comunque valere l'acquisto.</p>
+        <h2>Conclusioni</h2>
+        <p>Controllare attentamente una macchina da scrivere prima di acquistarla ti permetterà di fare un acquisto consapevole e di evitare problemi futuri. Segui questi consigli e sarai in grado di trovare una macchina da scrivere funzionante e di valore.</p>
+        <h3><a href="./MDS/Credits.html" style="text-decoration: none">Crediti</a></h3>
+    </body>
+</html>
