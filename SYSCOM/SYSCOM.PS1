@@ -490,8 +490,8 @@ function INFO {
     Write-Host "`n`n"
     Write-Host "`nNome programma: SYSCOM"
     Write-Host "`nNome funzione: INFO"
-    Write-Host "`nOra ultima scrittura: 19/05/2024 - 21:31"
-    Write-Host "`n! Se si vuole installare l'ultima versione avviare il file INSTALL.PS1" -ForegroundColor Red
+    Write-Host "`nOra ultima scrittura: 19/05/2024 - 21:36"
+    Write-Host "`n! Se vuoi aggiornare SYSCOM esegui l'operazione 0.5 nel Menu Principale" -ForegroundColor Red
 }
 
 # Menu principale
@@ -510,6 +510,7 @@ do {
     Write-Host "0.2. Imposta la risoluzione su un Televisore a tubo catodico (4:3)" 
     Write-Host "0.3. Imposta la risoluzione su un Monitor di un computer (16:9)"
     Write-Host "0.4. Informazioni sulla versione di SYSCOM"
+    Write-Host "0.5. Reinstalla e aggiorna SYSCOM"
     Write-Host ""
     $choice =  Read-Host "Inserisci il numero per l'operazione"
 
@@ -540,6 +541,7 @@ do {
         }
         "0.2" { Guida4_3 }
         "0.3" { Guida16_9 }
+        "0.5" { ./INSTALL.PS1}
         default { Write-Host "Operazione non valida. Riprova." }
     }
 
