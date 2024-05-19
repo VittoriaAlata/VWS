@@ -402,7 +402,28 @@ function SicurezzaProtezione {
     }
 }
 
-function Debug {
+function Guida4_3 {
+    Clear-Host
+    Write-Host "`nTra poco sarai reinderizzato alla pagina di DEBUG..." -ForegroundColor Yellow
+    Write-Host "`n`nHAI SELEZIONATO LA MODALITÀ 4:3"
+    Write-Host "`n!                        ! WARNING / ATTENZIONE !                         !" -ForegroundColor Red
+    Write-Host "`n! IMPOSTA LA MODALITÀ SCHERMO INTERO PRIMA DI PASSARE AL DEBUG" -ForegroundColor Red
+
+    $4_3 = Read-Host "`nVuoi passare alla schermata di DEBUG per i monitor 4:3[S/N]"
+    switch ($4_3) {
+        "S" {
+            Debug4_3
+        }
+        "N" {
+        }
+        Default {
+            Write-Host ""
+            Write-Warning "Inserisci un'operazione valida e riprova"
+        }
+    }
+}
+
+function Debug4_3 {
     Clear-Host
     Write-Host "`n      Schermata per capire la risoluzione massima supportata da SYSCOM     " -ForegroundColor Yellow
     Write-Host "`n`n"
@@ -415,11 +436,51 @@ function Debug {
     Write-Host "per regolare la dimensione del testo nel terminale:"
     Write-Host ""
     Write-Host ""
-    Write-Host "CTRL + SCROLL: Zoom avanti e indietro (se disponibile nel tuo terminale)"
-    Write-Host "CTRL + +     : Aumenta la dimensione del testo"
-    Write-Host "CTRL + -     : Diminuisce la dimensione del testo"
+    Write-Host "CTRL + SCROLL: Zoom avanti e indietro"
+    Write-Host "CTRL + +  : Aumenta la dimensione del testo (solo su Microsoft Terminal)"
+    Write-Host "CTRL + -  : Diminuisce la dimensione del testo (solo su Microsoft Terminal)"
     Write-Host "`n`n"
     Write-Host "Quando hai impostato correttamente la larghezza batti un tasto" -ForegroundColor GREEN
+    CTRLPause
+}
+function Guida16_9 {
+    Clear-Host
+    Write-Host "`nTra poco sarai reinderizzato alla pagina di DEBUG..." -ForegroundColor Yellow
+    Write-Host "`n`nHAI SELEZIONATO LA MODALITÀ 16:9"
+    Write-Host "`n!                        ! WARNING / ATTENZIONE !                         !" -ForegroundColor Red
+    Write-Host "`n! IMPOSTA LA MODALITÀ SCHERMO INTERO PRIMA DI PASSARE AL DEBUG" -ForegroundColor Red
+
+    $16_9 = Read-Host "`nVuoi passare alla schermata di DEBUG per i monitor 16:9[S/N]"
+    switch ($16_9) {
+        "S" {
+            Debug16_9
+        }
+        "N" {
+        }
+        Default {
+            Write-Host ""
+            Write-Warning "Inserisci un'operazione valida e riprova"
+        }
+    }
+}
+function Debug16_9 {
+    Clear-Host
+    Write-Host "`n                            Schermata per capire la risoluzione massima supportata da SYSCOM                           " -ForegroundColor Yellow
+    Write-Host "`n`n"
+    Write-Host "<<<-----------------------------------------DEVO-VEDERMI-IN-UNA-SOLA-RIGA----------------------------------------->>>"
+    Write-Host ""
+    Write-Host "!                                              ! WARNING / ATTENZIONE !                                               !" -ForegroundColor Red
+    Write-Host "`n! IMPOSTA LARGHEZZA SHELL PER VISUALIZZARE TUTTA LA LINEA IN UNA SOLA RIGA" -ForegroundColor Red
+    Write-Host "`n`n"
+    Write-Host "`nUtilizza le seguenti combinazioni di tasti"
+    Write-Host "per regolare la dimensione del testo nel terminale:"
+    Write-Host ""
+    Write-Host ""
+    Write-Host "CTRL + SCROLL: Zoom avanti e indietro"
+    Write-Host "CTRL + +     : Aumenta la dimensione del testo (solo su Microsoft Terminal)"
+    Write-Host "CTRL + -     : Diminuisce la dimensione del testo (solo su Microsoft Terminal)"
+    Write-Host "`n`n"
+    Write-Host "Quando hai impostato correttamente la larghezza premi un tasto" -ForegroundColor GREEN
     CTRLPause
 }
 
@@ -427,8 +488,9 @@ function INFO {
     Clear-Host
     Write-Host "`n       Schermata per capire la versione attualmente in uso di SYSCOM       " -ForegroundColor Yellow
     Write-Host "`n`n"
-    Write-Host "`nVersione: v0.1-beta.1"
-    Write-Host "`nData scrittura: 13/05/2024 (DD-MM-YYYY)"
+    Write-Host "`nNome programma: SYSCOM"
+    Write-Host "`nNome funzione: INFO"
+    Write-Host "`nOra ultima scrittura: 19/05/2024 - 17:09"
     Write-Host "`n! Se si vuole installare l'ultima versione avviare il file INSTALL.PS1" -ForegroundColor Red
 }
 
@@ -444,9 +506,10 @@ do {
     Write-Host "2. Gestione di Rete e Applicazioni"
     Write-Host "3. Sicurezza e Protezione"
     Write-Host "0. Esci"
-    Write-Host "F. Schermo Intero"
-    Write-Host "DEBUG. Schermata per la risoluzione massima supportata" 
-    Write-Host "INFO. Informazioni sulla versione di SYSCOM"
+    Write-Host "0.1. Schermo Intero"
+    Write-Host "0.2. Imposta la risoluzione su un Televisore a tubo catodico (4:3)" 
+    Write-Host "0.3. Imposta la risoluzione su un Monitor di un computer (16:9)"
+    Write-Host "0.4. Informazioni sulla versione di SYSCOM"
     Write-Host ""
     $choice =  Read-Host "Inserisci il numero per l'operazione"
 
@@ -455,10 +518,10 @@ do {
         "2" { GestioneReteApplicazioni }
         "3" { SicurezzaProtezione }
         "0" { exit }
-        "F" {
+        "0.1" {
             Start-Process .\VISO\F11.vbs
         }
-        "INFO" {
+        "0.4" {
             INFO
         }
         "LICENZA" {
@@ -471,11 +534,12 @@ do {
             Write-Host ""
             Get-Content ".\VISO\AUTRICE.ANS"
         }
-        "R" {
+        "0.0" {
             .\SYSCOM.PS1
             exit
         }
-        "Debug" { Debug }
+        "0.2" { Guida4_3 }
+        "0.3" { Guida16_9 }
         default { Write-Host "Operazione non valida. Riprova." }
     }
 
