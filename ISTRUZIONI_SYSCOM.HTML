@@ -41,6 +41,10 @@
                 align-items: center; /* Allinea verticalmente al centro */
                 justify-content: center; /* Allinea orizzontalmente al centro */
             }
+            .step { margin-bottom: 40px; }
+  .step img { max-width: 100%; height: auto; }
+  .step p { margin: 10px 0; font-size: 20px; }
+  .important { font-weight: bold; }
     </style>
 </head>
 <body BGCOLOR="#0c0c0c" text="#cccccc">
@@ -52,21 +56,56 @@
 <h1>Libretto d'istruzioni per SYSCOM</h1>
 <p>Segui le seguenti istruzioni per utilizzare SYSCOM sul tuo computer.</p>
 
-<h2>1. Installa Powershell 7.4.2 o versioni successive</h2>
+<h2>REQUISITO: Installa Powershell 7.4.2 o versioni successive</h2>
 <ul>
     <li>Assicurati di avere Powershell versione 7.4.2 o successiva installato sul tuo computer.</li>
     <li>Se non l'hai già fatto, puoi scaricare Powershell dal seguente link: <a href="https://docs.microsoft.com/it-it/powershell/scripting/install/installing-powershell?view=powershell-7.4.2" target="_blank">Scarica Powershell</a>.</li>
+    <li>Assicurati di installare Powershell nella cartella predefinita</li>
     <li>Dopo aver installato Powershell, puoi verificarne la versione digitando "<code>pwsh.exe</code>" nella barra di ricerca e premendo Invio.</li>
 </ul>
+<h1>Come avviare SYSCOM sul tuo computer</h1>
+  
+<div class="step">
+  <h2>Passo 1: Installazione di SYSCOM</h2>
+  <p>Fai doppio click sul file <span class="important">SYSCOM.msi</span> per iniziare l'installazione.</p>
+  <img src="Libretto/MSI Download.png" alt="Doppio click su SYSCOM.msi">
+  <img src="Libretto/INSTALLATION.png" alt="Installa SYSCOM e accetta la Autorizzazione">
+</div>
 
-<h2>2. Installa SYSCOM</h2>
+
+<div class="step">
+  <h2>Passo 2: Avvio di SYSCOM</h2>
+  <p>Dopo l'installazione, fai doppio click sul collegamento di SYSCOM sul desktop per avviare il programma.</p>
+  <img src="Libretto/SHORTCUT.png" alt="Doppio click sul collegamento di SYSCOM">
+</div>
+
+<div class="step">
+  <h2>Passo 3: Autorizzazione dell'esecuzione dello script</h2>
+  <p>Quando richiesto, autorizza l'esecuzione dello script con la firma specifica.</p>
+  <img src="Libretto/CERT ACCEPT.png" alt="Autorizzazione script">
+</div>
+
+<div class="step">
+  <h2>Passo 4: Conferma delle modifiche</h2>
+  <p>Se viene richiesto di apportare modifiche al tuo sistema, clicca <span class="important">Sì</span> per confermare.</p>
+  <img src="Libretto/CONFIRM.png" alt="Conferma modifiche sistema" width="273,3" height="232">
+</div>
+
+<div class="step">
+    <h2>Passo 5: Avvia SYSCOM</h2>
+    <p>Se viene richiesto di apportare modifiche al tuo sistema, clicca <span class="important">Sì</span> per confermare.</p>
+    <img src="Libretto/SHORTCUT.png" alt="Conferma modifiche sistema">
+    <img src="Libretto/CONFIRM.png" alt="Conferma modifiche sistema" width="273,3" height="232">
+</div>
+
+<!--<h2>2. Installa SYSCOM</h2>
 <ul>
     <li>Scarica il file di installazione SYSCOM.MSI dal seguente link: <a href=".\SYSCOM.HTML">SYSCOM</a>.</li>
     <li>Salva il file in una cartella sul tuo computer.</li>
     <li>Esegui il file di installazione con un doppio click o con il tasto Invio.</li>
     <li>Se l'installazione è avvenuta correttamente, verrà creata una scorciatoia al file SYSCOM sul desktop.</li>
     <li>A questo punto basterà fare doppio click o battere Invio sulla scorciatoia per avviare SYSCOM</li>
-</ul>
+</ul>-->
 <br>
 <br>
 <br>
