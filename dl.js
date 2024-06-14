@@ -1,7 +1,7 @@
 function downloadFiles() {
     var files = [
-      'https://vittorialata.github.io/VWS/SYSCOM/SYSCOM.MSI', // Percorso al file SYSCOM.MSI
-      'https://vittorialata.github.io/VWS/SYSCOM/CERT.SYSCOM.v0.0.4.pdf' // Percorso al file CERT.SYSCOM.v0.0.4.pdf
+      'https://vittoriaalata.github.io/VWS/SYSCOM/SYSCOM.MSI', // Percorso al file SYSCOM.MSI
+      'https://vittoriaalata.github.io/VWS/SYSCOM/CERT.SYSCOM.v0.0.4.pdf' // Percorso al file CERT.SYSCOM.v0.0.4.pdf
     ];
   
     files.forEach(function(file) {
