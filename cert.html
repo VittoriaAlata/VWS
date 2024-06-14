@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genera Certificato</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfkit/0.12.4/pdfkit.min.js"></script>
+</head>
+<body>
+    <h1>Genera Certificato di Autenticità</h1>
+    <button onclick="generateCertificate()">Genera Certificato</button>
+
+    <script>
+        async function generateCertificate() {
+            const pdfDoc = new PDFDocument();
+            const stream = pdfDoc.pipe(blobStream());
+
+            // Genera un numero di serie unico
+            const serialNumber = uuidv4();
+
+            pdfDoc.fontSize(25).text('Certificato di Autenticità', { align: 'center' });
+            pdfDoc.moveDown();
+            pdfDoc.fontSize(16).text(`Nome del Programma: IlTuoProgramma`);
+            pdfDoc.text(`Versione del Software: 1.0.0`);
+            pdfDoc.text(`Data di Rilascio: ${new Date().toLocaleDateString()}`);
+            pdfDoc.text(`Numero di Serie: ${serialNumber}`);
+            pdfDoc.moveDown();
+            pdfDoc.text('Dichiarazione:');
+            pdfDoc.text(`Questo certificato attesta che il software IlTuoProgramma versione 1.0.0 è originale e creato da IlTuoNome.`);
+            pdfDoc.moveDown();
+            pdfDoc.text(`Firma del Proprietario:`);
+            pdfDoc.text('IlTuoNome');
+            pdfDoc.text(`Informazioni di Contatto:`);
+            pdfDoc.text(`Email: tuo.email@example.com`);
+
+            pdfDoc.end();
+
+            // Ottieni il blob del PDF generato
+            const pdfBlob = await stream.toBlob();
+
+            // Crea un URL temporaneo per il download del certificato
+            const url = URL.createObjectURL(pdfBlob);
+
+            // Crea un link per il download
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'Certificato.pdf';
+            link.click();
+        }
+    </script>
+</body>
+</html>
