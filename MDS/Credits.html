@@ -26,24 +26,30 @@ body {
 .line-1 {
     position: relative;
     top: 1%;  
-    width: 24em;
+    width: 23em;
     margin: 0 auto;
     border-right: 2px solid rgba(255,255,255,.75);
     font-size: 180%;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
-    transform: translateY(-50%);    
+    transform: translateY(0%);
 }
+
+.homebutton {
+                display: flex; /* Utilizza il layout flessibile */
+                align-items: center; /* Allinea verticalmente al centro */
+                justify-content: center; /* Allinea orizzontalmente al centro */
+            }
 
 /* Animation */
 .anim-typewriter {
-  animation: typewriter 1s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
+  animation: typewriter 1s steps(43) 1s 1 normal both,
+             blinkTextCursor 500ms steps(43) infinite normal;
 }
 @keyframes typewriter {
   from { width: 0; }
-  to { width: 5em; }
+  to { width: 4em; }
 }
 @keyframes blinkTextCursor {
   from { border-right-color: rgba(255,255,255,.75); }
@@ -52,6 +58,11 @@ body {
         </style>
     </head>
     <body>
+      <div class="homebutton">
+        <a href="https://vittoriaalata.github.io/VWS/">
+            <img src="https://vittoriaalata.github.io/VWS/images/logo.png" width="150" height="150"/>
+        </a>
+        </div>
         <p class="line-1 anim-typewriter">Crediti</p>
         <h1>Ringraziamenti</h1>
         <p>Ringrazio <a href="https://css-tricks.com/snippets/css/typewriter-effect/" style="color: rgba(255,255,255,.75);">Geoff Graham</a> per l'animazione testuale della macchina da scrivere.</p>
