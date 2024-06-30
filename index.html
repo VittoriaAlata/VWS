@@ -20,6 +20,7 @@
         .container {
             display: flex; /* Utilizza il layout flessibile */
             align-items: center; /* Allinea verticalmente al centro */
+            flex-wrap: wrap; /* Permette agli elementi di andare a capo se non c'è abbastanza spazio */
         }
         .Home-Page {
             flex: 1; /* Flessibilità per adattarsi allo spazio disponibile */
@@ -42,6 +43,15 @@
             text-decoration: none;
             color: inherit;
         }
+        @media (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Imposta la direzione principale del layout flessibile in verticale */
+    }
+    .Home-Page {
+        margin-left: 0; /* Rimuove lo spazio a sinistra */
+        text-align: center; /* Centra il testo */
+    }
+}
     </style>
 </head>
 <body BGCOLOR="#fffeef" text="#22346e">
