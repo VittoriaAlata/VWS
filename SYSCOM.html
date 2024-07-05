@@ -15,7 +15,7 @@
 <link rel="manifest" href="./favicon_icons/SYSCOM/site.webmanifest">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
-<script src="dl.js"></script>
+<script src="SYSCOM-CLI.js"></script>
 
     <style>
         .courier-prime-regular {
@@ -54,6 +54,7 @@
     	
     	.DL:disabled {
     	  pointer-events: none;
+          background-color: #1A1A1A;
     	}
     	
     	.DL:hover {
@@ -93,6 +94,20 @@
             display: flex; /* Utilizza il layout flessibile */
             align-items: center; /* Allinea verticalmente al centro */
             justify-content: center; /* Allinea orizzontalmente al centro */
+        }
+
+        .front1 {
+            display: flex; /* Utilizza il layout flessibile */
+            align-items: left; /* Allinea verticalmente al centro */
+            justify-content: left; /* Allinea orizzontalmente al centro */
+            float: left;
+        }
+
+        .front2 {
+            display: flex; /* Utilizza il layout flessibile */
+            align-items: right; /* Allinea verticalmente al centro */
+            justify-content: right; /* Allinea orizzontalmente al centro */
+            float: right;
         }
         
         .button-container {
@@ -138,6 +153,7 @@
     	
     	.INS:disabled {
     	  pointer-events: none;
+          background-color: #1A1A1A;
     	}
     	
     	.INS:hover {
@@ -149,31 +165,105 @@
     	  box-shadow: none;
     	  transform: translateY(0);
     	}
+
+        .window1 {
+            background-color: #000000;
+            border-radius: 30px;
+            padding: 10px;
+            width: 48%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .window2 {
+            background-color: #0c0c0c;
+            border-radius: 30px;
+            padding: 10px;
+            width: 48%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
     </style>
 </head>
-<body BGCOLOR="#0c0c0c" text="#cccccc">
+<body BGCOLOR="#141414" text="#cccccc">
     <div class="homebutton">
         <a href="https://vittoriaalata.github.io/VWS/">
             <img src="images/logo.png" width="100" height="100"/>
         </a>
     </div>
-    <h1 align="center" class="courier-prime-regular">SYSCOM, per la gestione di Windows</h1>
-    <a class="homebutton">
-        <img src=".\images\SYSCOM-front.png" width="707.7" height="484.7"/>
-    </a>
-    <div class="button-container">
-        <a href=".\Libretto-SYSCOM" class="no-link-style">
-            <button class="INS" role="button">
-                Manuale
-            </button>
+    <h1 align="center" class="courier-prime-regular">SYSCOM - System Commander</h1>
+    <p></p>
+
+<div class="container">
+    <div class="window1">
+        <a class="front1">
+            <img src=".\images\SYSCOM-front2.png" width="707.7" height="484.7"/>
         </a>
-            <a  onclick="downloadFiles()" target="_blank" class="no-link-style">
-            <button class="DL" role="button" style="margin-left: 25px;
-            margin-right: 20px;">
-                Download SYSCOM
-            </button>
-        </a>
+        <h3 class="courier-prime-regular">SYSCOM - TUI Version</h1>
+        ━━━━━━━━━━━━━━━━━━━━━━
+        <div class="courier-prime-regular">
+            <p>Questa interfaccia utente testuale (TUI) è progettata per offrire un'esperienza intuitiva e altamente interattiva agli utenti, combinando la potenza del linguaggio di programmazione C# con la semplicità e l'efficienza di un'interfaccia testuale.</p>
+            <p>Il design della SYSCOM - TUI mira a fornire un'alternativa leggera e veloce alle interfacce grafiche più tradizionali, ottimizzata per prestazioni elevate e consumi ridotti di risorse di sistema. Utilizzando le capacità avanzate di C#, questa versione si distingue per la sua robustezza, facilitando allo stesso tempo una programmazione agile e modulare.</p>
+            <p>L'interfaccia è strutturata per consentire agli sviluppatori di personalizzare e estendere le funzionalità in base alle specifiche esigenze del progetto. La scelta di C# come linguaggio principale non solo garantisce una solida base di sviluppo, ma facilita anche l'integrazione con altre tecnologie Microsoft e l'accesso a un ampio ecosistema di librerie e framework.</p>\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+            <p>SYSCOM TUI porta con sè nuove aspettative e innovazione nel progetto della SYSCOM passando da un linguaggio di programmazione semplice, il powershell a uno molto più robusto, il C#</p>
+            <p>La versione TUI e la versione CLI verranno sviluppate separatamente e indipendentemente l'una dall'altra. SYSCOM TUI è il futuro del Software CLI per rendere accessibili le funzionalità base del sistema operativo, con capacità di espansione tramite software proprietario.</p>
+            <p>La versione è in via di sviluppo.</p>
+        </div>
+            <div class="button-container">
+            <a class="no-link-style">
+                <button class="INS" role="button" disabled>
+                    Manuale
+                </button>
+            </a>
+                <a  onclick="" target="_blank" class="no-link-style">
+                <button class="DL" disabled role="button" style="margin-left: 25px;
+                margin-right: 20px;">Download</button>
+            </a>
+        </div>
+        <h3 align="right" class="courier-prime-regular">Versione 0.0.5-beta</h3>
     </div>
-    <h3 align="center" class="courier-prime-regular">Versione 0.0.4</h3>
+
+
+    <div class="window2">
+        <a class="front2">
+            <img src=".\images\SYSCOM-front.png" width="707.7" height="484.7"/>
+        </a>
+        <h3 class="courier-prime-regular">SYSCOM - CLI Version</h1>    
+        ━━━━━━━━━━━━━━━━━━━━━━
+        <div class="courier-prime-regular">
+            <p>Questa interfaccia a Linea di Comando (CLI) è progettata per offrire un'esperienza veloce e leggerissima, combinando la potenza del linguaggio di programmazione Powershell con la semplicità e l'efficienza di un'interfaccia a Riga di Comando.</p>
+            <p>Il design della SYSCOM - CLI offre un alternativa velocissima, leggerissima, affidabile, questa versione si distingue per il suo essere multipiattaforma, recentemente si può utilizzare in modo completo e agevole anche con versioni di powershell precedenti, quindi può girare anche su hardware più vecchio. Versione adattissima per chi vuole avere un programma sicuro, affidabile e multipiattaforma, potendo eseguire operazioni complesse utilizzando poche risorse.</p>
+            <p>L'interfaccia è semplice come i primi programmi per Computer, ci sono tante soluzioni, Menu, funzioni e funzionalità anche esclusive da scoprire, programmate e teste a mano giorno per giorno e utilizzate dalla stessa sviluppatrice che ci lavora.</p>\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+            <p>SYSCOM CLI ha portato une evoluzione con sè, è stato il passaggio dalla primordiale VISO (Verificatore Integrità del Sistema Operativo) alla nuova interfaccia grafica basata su Menu (funzioni), che ha portato alla professionalità e allo sviluppo di nuove idee.</p>
+            <p>VISO è stato l'inizio, SYSCOM è stata la sua diretta figlia, ancora ad oggi se si scrive VISO nel prompt della prima schermata della SYSCOM si può utilizzare in maniera completa quello che era una volta un progetto che doveva durare solo 3 o 4 righe di codice.</p>
+            <p>                                     </p>
+        </div>
+        <div class="button-container">
+            <a href=".\SYSCOM\MANUALE-SYSCOM-CLI" class="no-link-style">
+                <button class="INS" role="button">
+                    Manuale
+                </button>
+            </a>
+                <a  onclick="downloadFiles()" target="_blank" class="no-link-style">
+                <button class="DL" role="button" style="margin-left: 25px;
+                margin-right: 20px;">Download</button>
+            </a>
+        </div>
+        <h3 align="right" class="courier-prime-regular">Versione 0.0.4</h3>
+    </div>
+
+</div>
 </body>
 </html>
