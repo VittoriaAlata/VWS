@@ -4,19 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0b5a3a1-a6d8-432f-8f59-5f6e78aaa2f2" name="Changes" comment="07/2024 Big Update">
-      <change afterPath="$PROJECT_DIR$/ArcaTele/ArcaTele.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArcaTele/It.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArcaTele/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MDS/Credits.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MDS/MDS.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SYSCOM/SYSCOM.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SYSCOM/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Divisorio.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/SYSCOM-front2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    <list default="true" id="f0b5a3a1-a6d8-432f-8f59-5f6e78aaa2f2" name="Changes" comment="Fix MDS PAGE ./Mds to ./MDS">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArcaTele/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ArcaTele/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDS/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/MDS/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,22 +39,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.SYSCOM.html.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.rust.reset.selective.auto.import": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/pierl/Desktop/Vi/MDS",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
-    "org.rust.first.attach.projects": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.SYSCOM.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.Vi.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.rust.reset.selective.auto.import&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/pierl/Desktop/Vi/MDS&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon&quot;: &quot;&quot;,
+    &quot;org.rust.first.attach.projects&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\pierl\Desktop\Vi\MDS" />
@@ -75,12 +67,12 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="SYSCOM.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Vi/SYSCOM/SYSCOM.html" useBuiltInWebServerPort="true">
+    <configuration name="Vi" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Vi/" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.SYSCOM.html" />
+        <item itemvalue="JavaScript Debug.Vi" />
       </list>
     </recent_temporary>
   </component>
@@ -95,7 +87,7 @@
       <workItem from="1721818857856" duration="5048000" />
       <workItem from="1721915628381" duration="1032000" />
       <workItem from="1721983504658" duration="963000" />
-      <workItem from="1721993572921" duration="7153000" />
+      <workItem from="1721993572921" duration="7511000" />
     </task>
     <task id="LOCAL-00001" summary="07/2024 Big Update">
       <option name="closed" value="true" />
@@ -105,7 +97,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722007388915</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fix MDS PAGE ./Mds to ./MDS">
+      <option name="closed" value="true" />
+      <created>1722009415356</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1722009415356</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +113,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="07/2024 Big Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="07/2024 Big Update" />
+    <MESSAGE value="Fix MDS PAGE ./Mds to ./MDS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix MDS PAGE ./Mds to ./MDS" />
   </component>
 </project>
