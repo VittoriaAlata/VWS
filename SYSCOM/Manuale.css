@@ -1,0 +1,34 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    line-height: 1;
+    margin: 15px;
+}
+
+ul, ol {
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 20px;
+    margin: 20px;
+}
+
+code {
+    background-color: #f4f4f421;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+li img {
+    display: block; /* Imposta l'immagine come blocco */
+}
+.homebutton {
+    display: flex; /* Utilizza il layout flessibile */
+    align-items: center; /* Allinea verticalmente al centro */
+    justify-content: center; /* Allinea orizzontalmente al centro */
+}
+.step { margin-bottom: 40px; }
+.step img { max-width: 100%; height: auto; }
+.step p { margin: 10px 0; font-size: 20px; }
+.important { font-weight: bold; }
