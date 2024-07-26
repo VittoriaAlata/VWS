@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f0b5a3a1-a6d8-432f-8f59-5f6e78aaa2f2" name="Changes" comment="Fix MDS PAGE ./Mds to ./MDS">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArcaTele/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ArcaTele/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDS/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/MDS/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/404.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
