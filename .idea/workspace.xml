@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f0b5a3a1-a6d8-432f-8f59-5f6e78aaa2f2" name="Changes" comment="07/2024 Big Update">
+      <change afterPath="$PROJECT_DIR$/ArcaTele/ArcaTele.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArcaTele/It.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArcaTele/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MDS/Credits.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MDS/MDS.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SYSCOM/SYSCOM.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SYSCOM/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Divisorio.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/SYSCOM-front2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="c2zqp1zz" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2jgq1qqxSISOSGouORSmUOIN19u" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.SYSCOM.html.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.rust.reset.selective.auto.import": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/pierl/Desktop/Vi/MDS",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
+    "org.rust.first.attach.projects": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pierl\Desktop\Vi\MDS" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pierl\Desktop\Vi\ArcaTele" />
+      <recent name="C:\Users\pierl\Desktop\Vi\SYSCOM" />
+      <recent name="C:\Users\pierl\Desktop\Vi\MDS" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="SYSCOM.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Vi/SYSCOM/SYSCOM.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.SYSCOM.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f0b5a3a1-a6d8-432f-8f59-5f6e78aaa2f2" name="Changes" comment="" />
+      <created>1721818856866</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1721818856866</updated>
+      <workItem from="1721818857856" duration="5048000" />
+      <workItem from="1721915628381" duration="1032000" />
+      <workItem from="1721983504658" duration="963000" />
+      <workItem from="1721993572921" duration="7153000" />
+    </task>
+    <task id="LOCAL-00001" summary="07/2024 Big Update">
+      <option name="closed" value="true" />
+      <created>1722007388915</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1722007388915</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="07/2024 Big Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="07/2024 Big Update" />
+  </component>
+</project>

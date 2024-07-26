@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Global */
+html {
+    min-height: 100%;
+    overflow-y: scroll; /* Permette lo scorrimento verticale */
+}
+body {
+    padding: 4em;
+    color: rgba(255,255,255,.75);
+    font-family: 'Anonymous Pro', monospace;
+    background-color: rgb(25,25,25);
+}
+.line-1 {
+    position: relative;
+    top: 1%;
+    width: 23em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(0%);
+}
+
+.homebutton {
+    display: flex; /* Utilizza il layout flessibile */
+    align-items: center; /* Allinea verticalmente al centro */
+    justify-content: center; /* Allinea orizzontalmente al centro */
+}
+
+/* Animation */
+.anim-typewriter {
+    animation: typewriter 1s steps(43) 1s 1 normal both,
+    blinkTextCursor 500ms steps(43) infinite normal;
+}
+@keyframes typewriter {
+    from { width: 0; }
+    to { width: 4em; }
+}
+@keyframes blinkTextCursor {
+    from { border-right-color: rgba(255,255,255,.75); }
+    to { border-right-color: transparent; }
+}

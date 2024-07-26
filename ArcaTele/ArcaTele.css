@@ -1,0 +1,4 @@
+html {
+    min-height: 300%;
+    overflow-y: scroll; /* Permette lo scorrimento verticale */
+}
