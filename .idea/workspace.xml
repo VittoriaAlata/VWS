@@ -7,6 +7,11 @@
     <list default="true" id="f0b5a3a1-a6d8-432f-8f59-5f6e78aaa2f2" name="Changes" comment="Fix MDS PAGE ./Mds to ./MDS">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDS/Credits.css" beforeDir="false" afterPath="$PROJECT_DIR$/MDS/Credits.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDS/Credits.html" beforeDir="false" afterPath="$PROJECT_DIR$/MDS/Credits.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDS/MDS.css" beforeDir="false" afterPath="$PROJECT_DIR$/MDS/MDS.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDS/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/MDS/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -86,7 +91,8 @@
       <workItem from="1721818857856" duration="5048000" />
       <workItem from="1721915628381" duration="1032000" />
       <workItem from="1721983504658" duration="963000" />
-      <workItem from="1721993572921" duration="7511000" />
+      <workItem from="1721993572921" duration="8195000" />
+      <workItem from="1722065273950" duration="2342000" />
     </task>
     <task id="LOCAL-00001" summary="07/2024 Big Update">
       <option name="closed" value="true" />

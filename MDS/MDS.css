@@ -6,10 +6,22 @@ html {
     overflow-y: scroll; /* Permette lo scorrimento verticale */
 }
 body {
-    padding: 4em;
+    padding: 130px;
     color: rgba(255,255,255,.75);
     font-family: 'Anonymous Pro', monospace;
     background-color: rgb(25,25,25);
+}
+p {
+    font-size: 25px;
+}
+h1 {
+    font-size: 45px;
+}
+h2 {
+    font-size: 35px;
+}
+li {
+    font-size: 25px;
 }
 .line-1 {
     position: relative;
@@ -17,11 +29,12 @@ body {
     width: 24em;
     margin: 0 auto;
     border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 180%;
+    font-size: 300%;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50%);
+    margin-top: 50px;
 }
 
 .homebutton {
