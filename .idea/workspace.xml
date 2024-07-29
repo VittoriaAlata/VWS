@@ -7,7 +7,6 @@
     <list default="true" id="f0b5a3a1-a6d8-432f-8f59-5f6e78aaa2f2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SYSCOM/SYSCOM.css" beforeDir="false" afterPath="$PROJECT_DIR$/SYSCOM/SYSCOM.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SYSCOM/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/SYSCOM/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +91,7 @@
       <workItem from="1721993572921" duration="8195000" />
       <workItem from="1722065273950" duration="6289000" />
       <workItem from="1722265708357" duration="6516000" />
-      <workItem from="1722275876672" duration="7079000" />
+      <workItem from="1722275876672" duration="7536000" />
     </task>
     <task id="LOCAL-00001" summary="07/2024 Big Update">
       <option name="closed" value="true" />

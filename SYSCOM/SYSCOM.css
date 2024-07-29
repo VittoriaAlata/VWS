@@ -282,7 +282,7 @@
             color: #000000;
         }
 
-        .BUTTON_TUI:disabled{
+        .BUTTON_CLI:disabled{
             pointer-events: none;
             background-color: #1f1f1f;
         }
