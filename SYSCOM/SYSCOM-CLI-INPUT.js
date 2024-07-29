@@ -4,7 +4,7 @@ function handleInput() {
     if (terminalInput === "1") {
         loadScript("SYSCOM-CLI.js", downloadFiles);
     } else if (terminalInput === "2") {
-        loadPage("https://vittoriaalata.github.io/VWS/SYSCOM/MANUALE-SYSCOM-CLI"); // Sostituisci con l'URL della pagina che vuoi caricare
+        loadPage("./MANUALE-CLI"); // Sostituisci con l'URL della pagina che vuoi caricare
     } else {
         alert("Opzione non valida!");
     }

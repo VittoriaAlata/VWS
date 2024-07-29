@@ -12,13 +12,13 @@ body {
     background-color: rgb(25,25,25);
 }
 p {
-    font-size: 25px;
+    font-size: 19px;
 }
 h1 {
-    font-size: 45px;
+    font-size: 31px;
 }
 h2 {
-    font-size: 35px;
+    font-size: 23px;
 }
 li {
     font-size: 25px;
@@ -29,7 +29,7 @@ li {
     width: 23em;
     margin: 0 auto;
     border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 480%;
+    font-size: 200%;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
@@ -41,6 +41,14 @@ li {
     display: flex; /* Utilizza il layout flessibile */
     align-items: center; /* Allinea verticalmente al centro */
     justify-content: center; /* Allinea orizzontalmente al centro */
+}
+
+.returnbutton img {
+    display: flex; /* Utilizza il layout flessibile */
+    justify-content: left; /* Allinea orizzontalmente al centro */
+    position: relative;
+    left: 16px;
+    top: -100px;
 }
 
 /* Animation */

@@ -32,6 +32,11 @@ body {
     text-decoration: none;
     color: inherit;
 }
+.dis {
+    text-decoration: none;
+    color: rgba(0,0,0, 30%);
+    pointer-events: none;
+}
 @media (max-width: 1080px) {
     .container {
         flex-direction: column; /* Imposta la direzione principale del layout flessibile in verticale */
