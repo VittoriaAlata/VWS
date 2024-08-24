@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="7cbbe8d0-49c1-47b6-8f13-a7675b263041" name="VWS" url="http://localhost/">
+        <fileTransfer mountedRoot="C:\Users\pierl\Desktop\Vi" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>
