@@ -26,7 +26,6 @@ li {
 .line-1 {
     position: relative;
     top: 0.7%;
-    width: 24em;
     margin: 0 auto;
     border-right: 2px solid rgba(255,255,255,.75);
     font-size: 300%;
@@ -45,12 +44,12 @@ li {
 
 /* Animation */
 .anim-typewriter {
-    animation: typewriter 4s steps(44) 1s 1 normal both,
+    animation: typewriter 1s steps(44) 1s 1 normal both,
     blinkTextCursor 500ms steps(44) infinite normal;
 }
 @keyframes typewriter {
     from { width: 0; }
-    to { width: 26em; }
+    to { width: 13em; }
 }
 @keyframes blinkTextCursor {
     from { border-right-color: rgba(255,255,255,.75); }
