@@ -69,8 +69,10 @@ body {
     margin: 20px;
     max-width: 100%;
     height: auto;
+    width: auto;
     font-size: 40pt;
     border-radius: 30px;
+    word-wrap:break-word;
 }
 
 .terminale {
